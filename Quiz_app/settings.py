@@ -72,13 +72,12 @@ WSGI_APPLICATION = 'Quiz_app.wsgi.application'
 
 DATABASES = {
     'default': {
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'quiz_app',
-        'ENGINE': 'mysql.connector.django',
         'USER': 'root',
-        'PASSWORD': 'root',
-        'OPTIONS': {
-            'autocommit': True,
-        },
+        'PASSWORD': 'mysql',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     }
 }
 
